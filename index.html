@@ -6,6 +6,9 @@
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
       appId: "49a2f8a4-1519-4a06-8052-5a20e1a5d7e0",
+        serviceWorkerPath: "OneSignalSDKWorker.js",
+        serviceWorkerParam: { scope: "/tarot_estrella/" }
+      });
     });
   });
 </script>
